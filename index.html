@@ -4,41 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form 01</title>
+    <title>Form 02</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- <header class="header"></header> -->
-    <main class="main container">
-        <section class="section__card-form flex">
-            <div class="header__discribe flex">
-                <h1 class="title__main">Learn to code by watching others</h1>
-                <p class="describe">See how experienced developers solve problems in real-time. Watching scripted
-                    tutorials is great, but understanding how developers think is invaluable. </p>
-            </div>
-            <div class="header__form flex">
-                <div class="trying__period flex">
-                    <h2 class="trying__period-7days">
-                        Try it free 7 days <span>then $20/mo. thereafter</span>
-                    </h2>
-                </div>
-                <div class="form flex">
-                    <form  class="form__with__input flex" action="#" method="post">
-                        <input type="text" placeholder="First Name" name="Firstname" />
-                        <input type="text" placeholder="Last Name" name="Secondtname" />
-                        <input type="email" placeholder="Email Address" name="Email" />
-                        <input type="password" placeholder="Enter password" name="Password" minlength="8" />
-                        <div class="button__section flex">
-                            <button class="button" type="submit">CLAIM YOUR FREE TRIAL</button>
-                            <p class="flex">By clicking the button, you are agreeing to our <span class="flex">Terms and Services</span></p>
-                        </div>
+    <main class="main">
+        <section class="background container flex">
+            <div class="content flex">
+                <article class="cards flex">
+                    <div class="flex">
+                        <img src="./assets/images/card-1.png" alt="image of card">
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/images/card-2.png" alt="image of car">
+                    </div>
+                </article>
+                <article class="form flex">
+                    <form action="./test.html" method="post">
+                        <section class="form flex">
+                            <div class="cardholder__name flex">
+                                <label for="e1">Cardholder Name</label>
+                                <input id="e1" type="text" placeholder="e.g. Jane Appleseed" name="cardholder name" />
+                            </div>
+                            <div class="card__number flex">
+                                <label for="e2">Card Number</label>
+                                <input id="e2" type="text" placeholder="e.g. 1234 5678 9123 0000" name="card number"
+                                    maxlength="16" />
+                            </div>
+                            <div class="card__data-cvc flex">
+                                <div class="flex">
+                                    <h1>Exp. Date (MM/YY)</h1>
+                                    <div class="expiry__date flex">
+                                        <input id="e3" type="text" placeholder="MM" name="expiry date" maxlength="2">
+                                        <input type="text" placeholder="YY" name="expire years" maxlength="2">
+                                    </div>
+                                </div>
+                                <div class="cvc__code flex">
+                                    <h1>CVC</h1>
+                                    <input type="text" placeholder="e.g. 123" name="expiry date" maxlength="3">
+                                </div>
+                            </div>
+                            <button type="submit">Confirm</button>
+                        </section>
                     </form>
-                </div>
-            </div>  
+                </article>
+            </div>
         </section>
     </main>
     <!-- <footer class="footer"></footer> -->

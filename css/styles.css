@@ -1,0 +1,161 @@
+:root {
+    --Deep-Violet: #21092F;
+    --Light-Grey: #DFDEE0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    width: 541px;
+    height: 527px;
+    row-gap: 37px;
+
+}
+
+.cards :nth-child(2) {
+    align-items: flex-end;
+}
+
+.cards :nth-child(1) {
+    align-items: flex-start;
+}
+
+.background {
+    background-image: url(../assets/images/background-image.jpg);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 900px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    column-gap: 127px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    row-gap: 26px;
+}
+
+.cardholder__name,
+.card__number {
+    row-gap: 9px;
+}
+
+label,
+h1 {
+    color: var(--Deep-Violet);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    width: 381px;
+    height: 45px;
+    border-radius: 8px;
+    font-family: Space Grotesk;
+    border: 1px solid var(--Light-Grey);
+    background: #FFF;
+}
+input[type="text"]:focus{
+    color: #3a005c;
+}
+
+.card__data-cvc {
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.expiry__date {
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+input {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.expiry__date input {
+    width: 80px;
+    height: 45px;
+}
+
+.card__data-cvc {
+    column-gap: 20px;
+}
+
+.cvc__code input {
+    width: 191px;
+    height: 45px;
+}
+
+button[type="submit"] {
+    width: 381px;
+    height: 53px;
+    border-radius: 8px;
+    background: var(--Deep-Violet);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+}
+button[type="submit"]:hover{
+    background-color: #3a005c;
+    transition: 0.5s;
+}
